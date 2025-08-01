@@ -1,0 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+GOOGLE_SHEET_NAME = os.getenv("GOOGLE_SHEET_NAME")
+GOOGLE_CREDENTIALS_FILE = os.getenv("GOOGLE_CREDENTIALS_FILE")
+
+TICKERS = ['RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS']
+BACKTEST_MONTHS = 6
